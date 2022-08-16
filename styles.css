@@ -437,6 +437,21 @@ text-align: right;
     grid-area: texto02;
   }
 
+  /* ANIMACIONES, GRADIENTS Y TRANSFORMATIONS */
+
+  .img-pasos :hover {
+    transform: scale(1.1);
+  }
+
+  .img-cursos :hover {
+    transform: scale(1.1);
+  }
+
+  .pasos-container {
+    background: linear-gradient(rgb(255, 255, 255), aqua);
+  }
+
+
   /* /* MEDIA QUERIES */
 
   /* Index Responsive */
