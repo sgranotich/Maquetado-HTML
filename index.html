@@ -6,35 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voxel Uy</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./img/favicon_io (1)/android-chrome-192x192.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div class="nav-logo">
-      <img class="logo" src="./img/Logo Voxel.png" alt="Voxel Uy">
-    </div>
-    <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="imprimir.html">Imprimir</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class=" navbar navbar-expand-lg navbar-fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./img/Logo Voxel.png" alt="Voxel Uy"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-items collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./imprimir.html">Imprimir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main class="main-index">
-    <div class="carrousel">
-      Acá va el Carrousel
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/Carrousel01.jpg" class=" w-100" alt="Imagen 01">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Carrousel02.jpg" class=" w-100" alt="Imagen 02">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Carrousel03.jpg" class=" w-100" alt="Imagen 03">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div class="pasos-container">
       <div>
@@ -70,7 +101,7 @@
           ¿Te interesa el mundo de la impresión 3D? Inscribite y aprendé los fundamentos de una de las tecnologías más
           demandadas en la industria 4.0
         </p>
-        <div class="btn-cursos">
+        <div class="btn-cursos-index">
           <a href="cursos.html">Más Info</a>
         </div>
       </div>
@@ -83,6 +114,9 @@
         src="./img/Logo-instagram.png" alt="Instagram"></a>
     <a href="contacto.html"><img class="logos-footer" src="./img/Logo-contacto.png" alt="Contacto"></a>
   </footer>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

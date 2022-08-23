@@ -6,26 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imprimir</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./img/favicon_io (1)/android-chrome-192x192.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
-    <img class="logo" src="./img/Logo Voxel.png" alt="Voxel Uy">
-    <nav>
-      <ul>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="imprimir.html">Imprimir</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
+    <nav class=" navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./img/Logo Voxel.png" alt="Voxel Uy"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-items collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./imprimir.html">Imprimir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main class="main-imprimir">
-    <h1>Imprimir</h1>
-    <h2>Tu idea, hecha realidad</h2>
+    <h1>Tu idea, hecha realidad</h1>
     <div class="modelado3d">
       <div class="info-modelado3d">
         <h3>
@@ -66,6 +90,8 @@
         src="./img/Logo-instagram.png" alt="Instagram"></a>
     <a href="contacto.html"><img class="logos-footer" src="./img/Logo-contacto.png" alt="Contacto"></a>
   </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

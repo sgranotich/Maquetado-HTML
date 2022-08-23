@@ -7,8 +7,6 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
     padding: 5px;
     background-color: rgba(237, 248, 255, 0.8);
     position: sticky;
@@ -64,7 +62,6 @@ footer {
     background-color: darkslategray;
     justify-content: center;
     display: flex;
-    /* width: 100%; */
     margin-top: auto;
 }
 
@@ -99,8 +96,11 @@ h1 {
     background-image: url(./img/Carrousel.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
-    width: 100vw;
+    height: 80vh;
+}
+
+.carousel-item{
+    height: 80vh;
 }
 
 .pasos-container {
@@ -131,12 +131,6 @@ text-align: center;
     display: flex;
 }
 
-h2 {
-    font-family: "montserrat";
-    font-weight: 600;
-    color: #213E3B;
-}
-
 h3 {
     font-family: "montserrat";
     font-weight: 600;
@@ -160,6 +154,8 @@ background-size: cover;
     text-align: left;
     margin: 0;
     color: white;
+    font-family: "montserrat";
+    font-weight: 600;
 }
 
 .cursos-container img {
@@ -172,72 +168,66 @@ background-size: cover;
     margin-top: 15px;
 }
 
-.btn-cursos {
-    text-align: left;
-    margin-top: 45px;
-    }
-
 .logos-footer {
     height: 60px;
 }
 
 footer a {
     padding: 15px;
+    overflow: hidden;
 }
 
-.formulario-contacto {
+.mail-box {
+    margin-top: 5%;
+}
 
-    height: 450px;
-    width: 800px;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
+.area-formulario {
+
+    width: 50%;
+}
+
+.contenedor-imagen-contacto {
+    width: 50%;
+    height: fit-content;
+}
+
+.contenedor-contacto {
+display: flex;
+}
+
+.imagen-contacto {
+    object-fit: cover;
+    width: 100%;
+    height: 520px;
+    padding: 5% 5% 0 5%;
 }
 
 .main-contacto {
     padding: 0%;
     margin: 5% 10% 10% 10%;
-/* 
-    text-align: left;
-    align-items: left;
-    margin: 40px 150px; */
-}
-
-.main-contacto h2 {
-    margin-left: 0%;
 }
 
 .main-imprimir {
     
     text-align: left;
-    align-items: left;
-    margin: 40px 150px;
+    margin: 5% 10% 10% 10%;
 }
 
 .main-imprimir h1 {
     text-align: left;
-    margin-left: 0px;
-}
-
-.main-imprimir h2 {
-    text-align: left;
-    margin: 10px 0px;
-    display: inline-block;
+    font-size: 2rem;
 }
 
 .modelado3d {    
     margin-top: 40px;
     height: 250px;
-    width: auto;
     background-image: url(./img/Modelado3d.jpg);
     background-size: cover;
     background-position: bottom;    
 }
 
 .info-modelado3d {
-    margin-left: 20px 30px;
+    margin-left: 20px;
     padding: 40px;
     width: max-content;
     height: 100%;
@@ -246,37 +236,41 @@ footer a {
 .info-modelado3d p{
     display: inline-block;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 200px;
+    padding-right: 15px;
 }
 
 .btn-generico {
     text-align: left;
-    align-items: right;
-    justify-content: right;
-    margin-right: 0%;
 }
 
 .btn-cursos {
     padding: 0px;
-    margin-top: 25px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.btn-cursos-index {
+    padding-bottom: 5%;
+    margin-top: 20px;
+    text-align: left;
 }
 
 .impresion3d {
     margin-top: 40px;
-    height: 250px;
-    width: 80vw;
+    height: fit-content;
     background-image: url(./img/Impresion3d.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .btn-modelado3d {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .info-impresion3d {
-    margin-left: 20px 30px;
+    margin-left: 20px;
     padding: 40px;
     width: max-content;
     height: 100%;
@@ -285,18 +279,24 @@ footer a {
 .info-impresion3d p{
     display: inline-block;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 200px;
     color: white;
+    padding-right: 20px;
 }
 
 .info-impresion3d h3{
     color: white;
+    font-size: 1.5rem;
+}
+
+.info-modelado3d h3 {
+    font-size: 1.5rem;
 }
 
 .clases {
     margin-top: 40px;
-    height: 250px;
+    height: fit-content
     width: 80vw;
     background-image: url(./img/Clases01.jpg);
     background-size: cover;
@@ -311,48 +311,52 @@ footer a {
 .info-clases3d p{
     display: inline-block;
     text-align: left;
-    margin-top: 20px;
-    width: 200px;
+    margin-top: 10px;
+    width: 25%;
+}
+
+.info-clases3d h3 {
+    font-size: 1.5rem;
 }
 
 .clases02 {
     margin-top: 40px;
-    height: 250px;
+    height: fit-content;
     width: 80vw;
     background-image: url(./img/Clases02.jpg);
     background-size: cover;
     background-position: bottom 
 }
-
-.main-nosotros {
-    margin-top: 40px;
-}
-
-  
-.main-nosotros h1, h2 {
-
-    margin: 10px 150px;
+ 
+.main-nosotros h1 {
+    margin: 5% 10% 2%;
     text-align: left;
-    align-items: left;
 }  
 
 .nosotros-info {
     width: 100vw;
-    padding: 100px 150px;
+    padding: 5% 10%;
     background-color: #f4ffff;
     margin-bottom: 50px;
 }
 
+.img-nosotros1 {
+    height: 60vh;
+    overflow: hidden;
+}
+
 .img-nosotros1 img{
-width: 600px;
-height: 300px;
-object-fit: cover;
+height: 60vh;
+}
+
+.img-nosotros2 {
+    height: 60vh;
+    overflow: hidden;
 }
 
 .img-nosotros2 img{
-    height: 300px;
-    width: 600px;
-    object-fit: cover;
+    height: 60vh;
+    overflow: hidden;
 }
 
 .nosotros-info h3 {
@@ -371,13 +375,13 @@ object-fit: cover;
 .texto01 {
     display: flex;
     align-items: center;
-    padding: 80px;
+    padding: 5%;
 }
 
 .texto02 {
 display: flex;
 align-items: center;
-padding: 80px;
+padding: 5%;
 }
 
 .texto01 p {
@@ -400,6 +404,15 @@ text-align: right;
     background-size: cover;
     margin-bottom: 100px;
 }
+
+.main-contacto h1 {
+    font-size: 2rem;
+}
+
+.main-nosotros h1{
+    font-size: 2rem;
+}
+
 
 /* GRIDS */
 
@@ -439,9 +452,11 @@ text-align: right;
 
   /* ANIMACIONES, GRADIENTS Y TRANSFORMATIONS */
 
-  .img-pasos :hover {
+/*   .img-pasos :hover {
     transform: scale(1.1);
   }
+
+  animate__slideInRight
 
   .img-cursos :hover {
     transform: scale(1.1);
@@ -449,41 +464,45 @@ text-align: right;
 
   .pasos-container {
     background: linear-gradient(rgb(255, 255, 255), aqua);
+  } */
+
+/*   .clases {
+    animation-duration: 1s;
+    animation-name: slidein;
   }
+
+  .clases02 {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
 
 
   /* /* MEDIA QUERIES */
+  /* Media Querie 1024px */
 
   /* Index Responsive */
 
 @media (max-width: 1024px) {
 
-header{
-    margin: 0;
-    padding: 0;
-}
 
-.nav {
-    width: 50vw;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    margin: 0;
-    text-align: right;
-    padding: 15px 10px;
-    display: block; 
-    width: 40vw;
-    font-size: 0.5rem;
+.carousel-item{
+    height: auto;
 }
 
 ul {
     display: block;
-}
-
-.carrousel {
-    height: 300px;
 }
 
 .pasos {
@@ -492,15 +511,33 @@ ul {
 }
 .h3-pasos{
     margin: 5px;
+    font-size: 1.3rem;
 }
 
 .btn-pasos {
     margin: 0%;
-    padding-bottom: 5%;
+}
+
+.info-clases3d p{
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    width: 40%;
+}
+
+.btn-cursos {
+    padding: 0px;
+    margin-top: 20px;
+    text-align: left;
 }
 
 .pasos-container {
     height: max-content;
+}
+.h2-cursos {
+    text-align: center;
+    margin: 0;
+    color: white;
 }
 
 .img-cursos{
@@ -541,23 +578,17 @@ ul {
 .info-cursos p{
     text-align: center;
     width: 100vw;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0 25%;
 }
 
-.info-cursos h2{
+.cursos-container p{
     text-align: center;
     width: 100vw;
-    padding: 0 30px;
 }
 
-.btn-cursos{
-    margin-top: 20px;
-}
-
-.cursos-container h2 p{
+.btn-cursos-index {
     text-align: center;
-    width: 100vw;
 }
 
 footer {
@@ -567,13 +598,36 @@ footer {
 .logos-footer {
     height: 40px;
     padding-bottom: 10px;
-}
- 
+    overflow: hidden;
 }
 
-  /* Imprimir Responsive */
+/* Contacto Responsive */
 
-@media (max-width: 1024px) {
+.main-contacto h1 {
+    font-size: 1.3rem;
+}
+
+.contenedor-contacto {
+    display: block;
+}
+
+.area-formulario{
+    width: 100%;
+}
+
+.contenedor-imagen-contacto {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.imagen-contacto{
+    padding: 0;
+    margin-top: 5%;
+    object-fit: cover;
+}
+
+/* Imprimir Responsive */
 
 .main-imprimir {
     padding: 0%;
@@ -584,20 +638,31 @@ footer {
     margin-top: 20px;
 }
 
-.main-imprimir h1, h2 {
+.main-imprimir h1 {
     font-size: 1.3rem;
+}
+
+.info-modelado3d h3 {
+    font-size: 1.5rem;
+}
+
+/* .info-modelado3d p {
+    font-size: 0.9rem;
+} */
+
+.info-impresion3d h3 {
+    font-size: 1.5rem;
 }
 
 .modelado3d{
     margin-top: 20px;
-    width: max-content;
     overflow: hidden;
 }
 
 .modelado3d {
     display: flex;
     margin-top: 20px;
-    height: 250px;
+    height: fit-content;
     width: 80vw;
     background-image: url(./img/Modelado3d.jpg);
     background-size: cover;
@@ -609,7 +674,211 @@ footer {
     width: max-content;
     padding: 40px;
 }
+
+/* Nosotros Responsive */
+ 
+.nosotros-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "imagen01 texto01"
+        "texto02 imagen02";
+
+    row-gap: 5%;
+    column-gap: 3%;
+  }
+
+  .img-nosotros1 {
+    grid-area: imagen01;
+  }
+
+  .img-nosotros2 {
+    grid-area: imagen02;
+  }
+
+  .texto01 {
+    grid-area: texto01;
+  }
+
+  .texto02 {
+    grid-area: texto02;
+  }
+
+  .main-nosotros h1{
+    font-size: 1.3rem;
+  }
+  
+  }
+
+/* Media Querie 520px */
+
+@media (max-width: 520px) {
+
+/* Nosotros Responsive */
+
+.nosotros-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: 
+        "imagen01"
+        "texto01"
+        "imagen02"
+        "texto02";
+
+    row-gap: 0%;
+    column-gap: 3%;
+  }
+
+  .img-nosotros1 {
+    grid-area: imagen01;
+  }
+
+  .img-nosotros2 {
+    grid-area: imagen02;
+  }
+
+  .texto01 {
+    grid-area: texto01;
+    height: fit-content;
+  }
+
+  .texto02 {
+    grid-area: texto02;
+    padding: 0 5%;
+  }
+
+  .texto01 p{
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .texto02 p{
+    text-align: center;
+    padding-top: 5%;
+
+  }
+
+  .main-nosotros h1{
+    font-size: 1.3rem;
+  }
+  
+  }  
+  
+
+  /* Index Responsive */
+
+  @media (max-width: 520px) {
+    
+  /*   .carousel-item{
+        height: auto;
+    } */
+
+    .pasos-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-pasos {
+        margin: 0%;
+        padding-bottom: 5%;
+        font-size: 0.8rem;
+    }
+    
+    .btn-cursos {
+        padding: 0px;
+        margin-top: 20px;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    .h3-pasos {
+        font-size: 1rem;
+    }
+    
+    .h2-cursos {
+        text-align: center;
+        margin: 0;
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+.btn-cursos-index a {
+    font-size: 0.8rem;
+    text-align: center;
+}
+    .info-cursos p{
+        text-align: center;
+        width: 100vw;
+        font-size: 0.8rem;
+        padding: 0 25%;
+    }
+    
+    .cursos-container p{
+        text-align: center;
+        width: 100vw;
+        font-size: 0.8rem;
+    } 
+
+    /* Imprimir Responsive */
+
+
+.btn-generico {
+    font-size: 0.9rem;
+}
+
+.info-modelado3d h3 {
+    font-size: 1.1rem;
+}
+
+.info-modelado3d p {
+    font-size: 0.9rem;
+}
+
+.info-impresion3d h3 {
+    font-size: 1.1rem;
+}
+.info-impresion3d p {
+    font-size: 0.9rem;
 }
 
 
+.main-imprimir h1 {
+    font-size: 1.1rem;
+}
 
+/* Contacto Responsive */
+
+.main-contacto h1 {
+    font-size: 1.1rem;
+}
+
+/* Cursos Responsive */
+
+.info-clases3d h3 {
+    font-size: 1.1rem;
+}
+
+.info-clases3d p {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 2% 2% 10% 0%;
+}
+
+.btn-cursos {
+    margin-top: 0%;
+}
+
+}
+
+/* BOOTSTRAP */
+/* Navbar */
+
+.navbar-items {
+    justify-content: flex-end;
+}
+
+.carousel-item {
+    object-fit:cover;
+    Z-index:-9;
+  }
