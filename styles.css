@@ -296,7 +296,7 @@ display: flex;
 
 .clases {
     margin-top: 40px;
-    height: fit-content
+    height: fit-content;
     width: 80vw;
     background-image: url(./img/Clases01.jpg);
     background-size: cover;
