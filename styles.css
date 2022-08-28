@@ -219,11 +219,11 @@ display: flex;
 }
 
 .modelado3d {    
-    margin-top: 40px;
+    margin: 40px 0;
     height: 250px;
     background-image: url(./img/Modelado3d.jpg);
     background-size: cover;
-    background-position: bottom;    
+    background-position: center;    
 }
 
 .info-modelado3d {
@@ -241,8 +241,43 @@ display: flex;
     padding-right: 15px;
 }
 
+.card {
+    text-align: center;
+    margin: 5%;
+    z-index: -1;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card-body h5, h6 ,a {
+    font-family: "montserrat";
+}
+
+.card-body h5, h6 ,a {
+    font-family: "montserrat";
+    font-weight: 400;
+}
+
+.card-body {
+    height: fit-content;
+}
+
+.contenedor-card-plasticos {
+    display: flex;
+}
+
+
 .btn-generico {
     text-align: left;
+}
+
+
+.btn-imprimir {
+    background-color:#41AEA9;;
+    font-family: "montserrat";
+    border: 0;
 }
 
 .btn-cursos {
@@ -258,7 +293,7 @@ display: flex;
 }
 
 .impresion3d {
-    margin-top: 40px;
+    margin: 40px 0%;
     height: fit-content;
     background-image: url(./img/Impresion3d.jpg);
     background-size: cover;
@@ -325,8 +360,17 @@ display: flex;
     width: 80vw;
     background-image: url(./img/Clases02.jpg);
     background-size: cover;
-    background-position: bottom 
+    background-position: bottom;
 }
+
+.clases03 {
+    margin-top: 40px;
+    height: fit-content;
+    width: 80vw;
+    background-image: url(./img/Clases03.jpg);
+    background-size: cover;
+    background-position: center;
+} 
  
 .main-nosotros h1 {
     margin: 5% 10% 2%;
@@ -335,14 +379,14 @@ display: flex;
 
 .nosotros-info {
     width: 100vw;
-    padding: 5% 10%;
-    background-color: #f4ffff;
+    padding: 2% 10% 5% 10%;
     margin-bottom: 50px;
 }
 
 .img-nosotros1 {
     height: 60vh;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .img-nosotros1 img{
@@ -352,6 +396,7 @@ height: 60vh;
 .img-nosotros2 {
     height: 60vh;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .img-nosotros2 img{
@@ -393,9 +438,20 @@ text-align: right;
 }
 
 .galeria-nosotros h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 2rem;    
+    margin-left: 10%;
+}
+
+.galeria-nosotros p {   
+    margin-left: 10%;
+    font-family: "Montserrat";
+    text-align: left;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.materiales h3, p{
+    text-align: left;
 }
 
 .carrousel-galeria {
@@ -452,6 +508,30 @@ text-align: right;
 
   /* ANIMACIONES, GRADIENTS Y TRANSFORMATIONS */
 
+  .img-pasos :hover {
+    transform: scale(1.1);
+  }
+
+
+.main-imprimir {
+    animation-duration: 2s;
+    animation-name: animate__backInRight;
+  }
+
+  
+  @keyframes animate__backInRight {
+    from {
+      margin-left: 100%;
+      width: 80%
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 80%;
+    }
+    
+    }
+
 /*   .img-pasos :hover {
     transform: scale(1.1);
   }
@@ -471,6 +551,8 @@ text-align: right;
     animation-name: slidein;
   }
 
+  animate__pulse
+
   .clases02 {
     animation-duration: 1s;
     animation-name: slidein;
@@ -486,7 +568,7 @@ text-align: right;
       margin-left: 0%;
       width: 100%;
     }
-  } */
+  }
 
 
   /* /* MEDIA QUERIES */
@@ -679,18 +761,23 @@ footer {
  
 .nosotros-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    padding-bottom: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.4fr 0.5fr 0.1fr;
     grid-template-areas: 
-        "imagen01 texto01"
-        "texto02 imagen02";
+        "imagen01"
+        "texto01"
+        "imagen02"
+        "texto02";
 
-    row-gap: 5%;
+    row-gap: 0%;
     column-gap: 3%;
+    margin-bottom: 0;
   }
 
   .img-nosotros1 {
     grid-area: imagen01;
+    height: 40vh;
   }
 
   .img-nosotros2 {
@@ -705,9 +792,25 @@ footer {
     grid-area: texto02;
   }
 
+  .texto01 p{
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .texto02 p{
+    text-align: center;
+    padding-top: 5%;
+  }
+
   .main-nosotros h1{
     font-size: 1.3rem;
   }
+
+  .contenedor-card-plasticos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   
   }
 
@@ -720,7 +823,7 @@ footer {
 .nosotros-info {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas: 
         "imagen01"
         "texto01"
@@ -729,14 +832,17 @@ footer {
 
     row-gap: 0%;
     column-gap: 3%;
+    margin-bottom: 0;
   }
 
   .img-nosotros1 {
     grid-area: imagen01;
+    height: 30vh;
   }
 
   .img-nosotros2 {
     grid-area: imagen02;
+    height: 30vh;
   }
 
   .texto01 {
@@ -746,22 +852,31 @@ footer {
 
   .texto02 {
     grid-area: texto02;
-    padding: 0 5%;
+
   }
 
   .texto01 p{
     text-align: center;
     padding-top: 5%;
+    font-size: 0.9rem;
   }
 
   .texto02 p{
     text-align: center;
     padding-top: 5%;
-
+    font-size: 0.9rem;
   }
 
   .main-nosotros h1{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+
+  .galeria-nosotros h3{
+    font-size: 1.1rem;
+  }
+
+  .galeria-nosotros p{
+    font-size: 1rem;
   }
   
   }  
@@ -831,7 +946,24 @@ footer {
     font-size: 1.1rem;
 }
 
+.info-modelado3d {
+   margin-left: 0%;
+}
+
+.info-impresion3d {
+    margin-left: 0%;
+    padding-right: 0;
+ }
+
 .info-modelado3d p {
+    font-size: 0.9rem;
+}
+
+.materiales h3 {
+    font-size: 1.1rem;
+}
+
+.materiales p {
     font-size: 0.9rem;
 }
 
