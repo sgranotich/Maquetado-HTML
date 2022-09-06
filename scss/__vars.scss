@@ -1,0 +1,32 @@
+$titleColor: #213E3B;
+$btnColor: #41AEA9;
+$footerColor: darkslategray;
+$bgColor: #fcfcfc;
+$navBarColor: rgba(237, 248, 255, 0.8);
+$btnTextColor: #f4f4f4;
+$btnHover:#186b67;
+
+
+/* Maps */
+
+$titlesh1: (
+    color: $titleColor,
+    size: 2em,
+    fontFamily: "montserrat"
+);
+
+$titlesh3: (
+    color: $titleColor,
+    size: 1.5em,
+    fontFamily: "montserrat"
+);
+
+
+@mixin btnText {
+    color: $btnTextColor;
+    size: 1em;
+    font-family: "montserrat";
+    text-decoration:none;
+    font-weight: 600;
+}; 
+

@@ -1,0 +1,24 @@
+
+.main-imprimir {
+    animation-duration: 1.5s;
+    animation-name: animate__backInRight;
+  }
+
+  .main-cursos {
+    animation-duration: 1.5s;
+    animation-name: animate__backInRight;
+  }
+
+  
+  @keyframes animate__backInRight {
+    from {
+      margin-left: 100%;
+      width: 80%
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 80%;
+    }
+    
+    }
