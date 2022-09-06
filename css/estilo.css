@@ -285,7 +285,7 @@ footer .logos-footer {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-image: url(/img/Modelado3d.jpg);
+  background-image: url(../img/Modelado3d.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -327,7 +327,7 @@ footer .logos-footer {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-image: url(/img/Impresion3d.jpg);
+  background-image: url(../img/Impresion3d.jpg);
   background-size: cover;
   background-position: center;
 }
