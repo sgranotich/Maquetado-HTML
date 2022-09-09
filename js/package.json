@@ -1,7 +1,7 @@
 {
-  "name": "maquetado-html---copia",
+  "name": "Voxel Uy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web destinado a la comunicación de los diferentes servicios brindados por la empresa Voxel Uy, dedicada al rubro de la Impresión 3D",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

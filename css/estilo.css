@@ -95,7 +95,8 @@ header .container-fluid .navbar-items {
   font-family: "montserrat";
 }
 header .container-fluid .navbar-items .navbar-nav {
-  margin-right: 50px;
+  margin-right: 15px;
+  text-align: right;
 }
 
 /* Carrousel */
@@ -107,11 +108,6 @@ header .container-fluid .navbar-items .navbar-nav {
      object-fit: cover;
   height: 80vh !important;
 }
-
-/* Pasos */
-
-  /* Cursos */
-
 .main-index .pasos-container {
   padding: 50px;
   width: 100%;
