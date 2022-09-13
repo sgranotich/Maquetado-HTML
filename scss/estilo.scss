@@ -11,19 +11,23 @@ header {
     position: sticky;
     top: 0;
     z-index: 2 !important;
+
     .navbar {
         background-color: $navBarColor;
         top: 0;
     }
+
     .container-fluid {
         .logo {
             height: 100px;
             margin: 5px 50px;
         }
+
         .navbar-items {
             list-style: none;
             flex-direction: row-reverse;
             font-family: "montserrat";
+
             .navbar-nav {
                 margin-right: 15px;
                 text-align: right;
@@ -33,15 +37,15 @@ header {
 }
 
 /* Carrousel */
-    .carousel-inner {
-        height: 80vh;
-        .carousel-item {
-            img {
-                object-fit: cover;
-                height: 80vh !important;
-            }
+.carousel-inner {
+    height: 80vh;
+    .carousel-item {
+        img {
+            object-fit: cover;
+            height: 80vh !important;
         }
     }
+}
 
 /* Pasos */
 .main-index {
@@ -131,17 +135,42 @@ header {
 
 /* Footer */
 footer {
-    display: flex;
-    height: 100px;
+    display: block;
     background-color: $footerColor;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
+    height: fit-content;
+    text-align: center;
 
-    .logos-footer {
-        width: 80px;
-        color: aliceblue;
-        padding: 0 15px;
+    .logos-footer-contenedor {
+        display: flex;
+        width: 99vw;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+
+        a {
+            margin: 0 10px;
+
+            .logos-footer {
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        color: $btnTextColor;
+        padding: 2% 0 1% 0;
+
+        h6 {
+            font-weight: 200;
+            font-size: 0.8em;
+        }
+
+        h6 {
+            font-weight: 200;
+            font-size: 0.8em;
+        }
     }
 }
 
@@ -165,13 +194,16 @@ footer {
     }
 
     footer {
-        height: 40px;
-
-        a {
-            .logos-footer {
-                width: 65px;
+        .logos-footer-contenedor {
+            a {
+                .logos-footer {
+                    height: 40px;
+                    width: 40px;
+                }
             }
+
         }
+
     }
 
     .carousel-inner {
@@ -412,23 +444,27 @@ footer {
         background-image: url(../img/Clases02.jpg);
         background-size: cover;
         background-position: center;
-        
+
         .info-clases3d {
             padding: 40px 0 40px 40px;
             width: 80%;
             height: 100%;
+
             h3 {
                 font-family: "montserrat";
                 color: $titleColor;
             }
+
             p {
                 margin-bottom: 20px;
                 font-family: "helvetica";
                 width: 190px;
                 color: $titleColor;
             }
+
             .btn-cursos {
                 @extend .btn-generico;
+
                 a {
                     color: $btnTextColor;
                 }
@@ -443,22 +479,27 @@ footer {
         background-image: url(../img/Clases03.jpg);
         background-size: cover;
         background-position: center;
+
         .info-clases3d {
             padding: 40px 0 40px 40px;
             width: 90%;
             height: 100%;
+
             h3 {
                 font-family: "montserrat";
                 color: $titleColor;
             }
+
             p {
                 margin-bottom: 20px;
                 font-family: "helvetica";
                 width: 190px;
                 color: $titleColor;
             }
+
             .btn-cursos {
                 @extend .btn-generico;
+
                 a {
                     color: $btnTextColor;
                 }
@@ -489,10 +530,13 @@ footer {
         text-align: left;
         margin-bottom: 3%;
     }
+
     .contenedor-contacto {
         display: flex;
+
         .area-formulario {
             width: 100%;
+
             .btn-contacto {
                 @extend .btn-generico;
 
@@ -501,15 +545,17 @@ footer {
                 }
             }
         }
+
         .contenedor-imagen-contacto {
             width: 100%;
             display: flex;
             justify-content: right;
-            img {
-                object-fit: cover;
-                width: 100%;
+
+            iframe {
                 height: 470px;
+                width: 100%;
                 padding: 5% 5% 0 5%;
+                overflow: hidden;
             }
         }
     }
@@ -522,13 +568,16 @@ footer {
         h1 {
             font-size: 1.6em;
         }
+
         .contenedor-contacto {
             display: block;
+
             .contenedor-imagen-contacto {
-                .imagen-contacto {
+                iframe {
                     padding: 0;
-                    margin-top: 15px;
+                    margin: 35px 0;
                     height: 200px;
+                    overflow: hidden;
                 }
             }
         }
@@ -539,6 +588,7 @@ footer {
 /* NOSOTROS */
 .main-nosotros {
     margin: 5% 10% 5% 10%;
+
     h1 {
         font-size: map-get($titlesh1, size);
         color: map-get($titlesh1, color);
@@ -558,23 +608,28 @@ footer {
         column-gap: 25px;
         margin-bottom: 50px;
     }
+
     .img-nosotros1 {
         grid-area: imagen01;
         overflow: hidden;
         border-radius: 15px;
+
         img {
             height: 60vh;
         }
     }
+
     .img-nosotros2 {
         grid-area: imagen02;
         height: 60vh;
         overflow: hidden;
         border-radius: 15px;
+
         img {
             height: 60vh;
         }
     }
+
     .texto01 {
         grid-area: texto01;
         display: flex;
@@ -582,6 +637,7 @@ footer {
         padding: 5%;
         font-family: "helvetica";
     }
+
     .texto02 {
         grid-area: texto02;
         display: flex;
@@ -589,6 +645,7 @@ footer {
         padding: 5%;
         font-family: "helvetica";
     }
+
     .galeria-nosotros {
         h3 {
             font-size: map-get($titlesh3, size);
@@ -597,6 +654,7 @@ footer {
             text-align: left;
             margin-top: 80px;
         }
+
         p {
             font-family: "helvetica";
         }
@@ -612,6 +670,7 @@ footer {
         h1 {
             font-size: 1.6em;
         }
+
         .nosotros-info {
             display: grid;
             grid-template-columns: 1fr;
@@ -624,35 +683,43 @@ footer {
             row-gap: 0%;
             column-gap: 3%;
             margin: 40px 0;
+
             .img-nosotros1 {
                 grid-area: imagen01;
                 height: 30vh;
             }
+
             .img-nosotros2 {
                 grid-area: imagen02;
                 height: 30vh;
             }
+
             .texto01 {
                 grid-area: texto01;
                 height: fit-content;
+
                 p {
                     text-align: center;
                     padding-top: 5%;
                     font-size: 0.9rem;
                 }
             }
+
             .texto02 {
                 grid-area: texto02;
+
                 p {
                     text-align: center;
                     padding-top: 5%;
                     font-size: 0.9rem;
                 }
             }
+
             .galeria-nosotros {
                 h3 {
                     font-size: 1.1rem;
                 }
+
                 p {
                     font-size: 1rem;
                 }

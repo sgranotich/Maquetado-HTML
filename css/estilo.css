@@ -108,6 +108,11 @@ header .container-fluid .navbar-items .navbar-nav {
      object-fit: cover;
   height: 80vh !important;
 }
+
+/* Pasos */
+.main-index {
+  /* Cursos */
+}
 .main-index .pasos-container {
   padding: 50px;
   width: 100%;
@@ -192,17 +197,39 @@ header .container-fluid .navbar-items .navbar-nav {
 
 /* Footer */
 footer {
-  display: flex;
-  height: 100px;
+  display: block;
   background-color: darkslategray;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
 }
-footer .logos-footer {
-  width: 80px;
-  color: aliceblue;
-  padding: 0 15px;
+footer .logos-footer-contenedor {
+  display: flex;
+  width: 99vw;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+footer .logos-footer-contenedor a {
+  margin: 0 10px;
+}
+footer .logos-footer-contenedor a .logos-footer {
+  height: 70px;
+  width: 70px;
+}
+footer .copy {
+  text-align: center;
+  color: #f4f4f4;
+  padding: 2% 0 1% 0;
+}
+footer .copy h6 {
+  font-weight: 200;
+  font-size: 0.8em;
+}
+footer .copy h6 {
+  font-weight: 200;
+  font-size: 0.8em;
 }
 
 /* Index Media Queries */
@@ -214,11 +241,9 @@ footer .logos-footer {
     height: 80px;
     margin: 5px 10px;
   }
-  footer {
+  footer .logos-footer-contenedor a .logos-footer {
     height: 40px;
-  }
-  footer a .logos-footer {
-    width: 65px;
+    width: 40px;
   }
   .carousel-inner {
     height: 50vh;
@@ -485,12 +510,11 @@ footer .logos-footer {
   display: flex;
   justify-content: right;
 }
-.main-contacto .contenedor-contacto .contenedor-imagen-contacto img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+.main-contacto .contenedor-contacto .contenedor-imagen-contacto iframe {
   height: 470px;
+  width: 100%;
   padding: 5% 5% 0 5%;
+  overflow: hidden;
 }
 
 /* Contacto Media Queries */
@@ -501,10 +525,11 @@ footer .logos-footer {
   .main-contacto .contenedor-contacto {
     display: block;
   }
-  .main-contacto .contenedor-contacto .contenedor-imagen-contacto .imagen-contacto {
+  .main-contacto .contenedor-contacto .contenedor-imagen-contacto iframe {
     padding: 0;
-    margin-top: 15px;
+    margin: 35px 0;
     height: 200px;
+    overflow: hidden;
   }
 }
 /* NOSOTROS */
