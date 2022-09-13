@@ -206,7 +206,7 @@ footer {
 }
 footer .logos-footer-contenedor {
   display: flex;
-  width: 99vw;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding-top: 2%;
@@ -219,17 +219,19 @@ footer .logos-footer-contenedor a .logos-footer {
   width: 70px;
 }
 footer .copy {
+  width: 100%;
   text-align: center;
-  color: #f4f4f4;
   padding: 2% 0 1% 0;
 }
 footer .copy h6 {
   font-weight: 200;
   font-size: 0.8em;
+  color: #f4f4f4;
 }
 footer .copy h6 {
   font-weight: 200;
   font-size: 0.8em;
+  color: #f4f4f4;
 }
 
 /* Index Media Queries */

@@ -142,7 +142,7 @@ footer {
 
     .logos-footer-contenedor {
         display: flex;
-        width: 99vw;
+        width: 100%;
         align-items: center;
         justify-content: center;
         padding-top: 2%;
@@ -158,18 +158,20 @@ footer {
     }
 
     .copy {
+        width: 100%;
         text-align: center;
-        color: $btnTextColor;
         padding: 2% 0 1% 0;
 
         h6 {
             font-weight: 200;
             font-size: 0.8em;
+            color: $btnTextColor;
         }
 
         h6 {
             font-weight: 200;
             font-size: 0.8em;
+            color: $btnTextColor;
         }
     }
 }
