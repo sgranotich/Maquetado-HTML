@@ -108,11 +108,6 @@ header .container-fluid .navbar-items .navbar-nav {
      object-fit: cover;
   height: 80vh !important;
 }
-
-/* Pasos */
-.main-index {
-  /* Cursos */
-}
 .main-index .pasos-container {
   padding: 50px;
   width: 100%;
@@ -198,7 +193,7 @@ header .container-fluid .navbar-items .navbar-nav {
 /* Footer */
 footer {
   display: block;
-  background-color: darkslategray;
+  background-color: rgb(47, 79, 79);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
